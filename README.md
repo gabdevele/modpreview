@@ -21,7 +21,7 @@ Follow these steps to run the preview locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/serversearchweb.git
+   git clone https://github.com/gabdevele/serversearchweb.git
    cd serversearchweb
    ```
 2. **Install Dependencies**:
