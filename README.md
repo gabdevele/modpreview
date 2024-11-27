@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# ServerSearch Web
+A web preview of a new mod that is about to be released called ServerSearch. To show you how powerful this tool is, I created a webpage preview.
+Checkout the [**live demo**](https://gabdevele.github.io/serversearchweb/)
+![image](https://github.com/user-attachments/assets/584bc317-b8de-4e84-b3e2-e8087fadea26)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is it?
+ServerSearch allows you to search for servers inside Minecraft without having to open a browser and browse through dozens of websites.
 
-Currently, two official plugins are available:
+## Features 
+- Search for servers directly inside Minecraft.
+- Save them to your list and join instantly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to run it locally
+Follow these steps to run the preview locally:
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Ensure **Node.js** is installed on your system.
+- Have a package manager ready, such as npm or Yarn.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/serversearchweb.git
+   cd serversearchweb
+   ```
+2. **Install Dependencies**:
+    ```bash
+    npm install
+    ```
+3. **Run the server**:
+    ```bash
+    npm run dev
+    ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Contributing
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Feel free to submit issues or contribute to the project via pull requests. All contributions are welcome!
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## License
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This project is licensed under the MIT License.
+
